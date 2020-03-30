@@ -77,9 +77,7 @@ func (n *Node) PushNode(node Node) {
 func (n *Node) Push(v interface{}) {
 	if n.value == nil {
 		n.value = v
-		return
-	}
-	if n.next == nil {
+	} else if n.next == nil {
 		n.next = &Node{ v, nil }
 	} else {
 		n.next.Push(v)
