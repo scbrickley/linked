@@ -20,7 +20,7 @@ func TestCreateAndPush(t *testing.T) {
 	}
 }
 
-func TestLengthgthAndIndex(t *testing.T) {
+func TestLengthAndIndex(t *testing.T) {
 	list := EmptyList()
 	t.Log("Length of list should equal 0")
 	if list.Length() == 0 {
